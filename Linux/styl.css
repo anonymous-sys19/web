@@ -1,0 +1,245 @@
+:root {
+    --verde: #b40404;
+    --limon: #605ecf;
+    --degradado: linear-gradient(90deg, var(--limon), var(--verde));
+}
+
+article{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2rem;
+    display: flex;
+
+}
+
+.principal {
+       width: 100%; 
+       align-items: center;
+       align-content: center;
+       justify-content: center;
+       margin: auto;
+       padding: 3rem 5%;
+
+}
+.principal h2 {
+    margin: auto;
+    padding: auto;
+    padding-bottom: 10px; 
+}
+.myrigth a{
+    margin: 4px;
+    padding: 5px;
+    font-size: 13px;
+    display: block;
+    background: rgb(19, 10, 10);
+}
+.myrigth p{
+    padding: 10px;
+    align-content: center;
+
+}
+.myrigth .mydivbar {
+    margin: 3rem 3rem 1% 30%;
+    padding: auto;
+    border: solid 1px red;
+    text-align: center;
+    border-radius: 10%;
+}
+.myrigth .mydivbar .myfor{
+    padding: 1.2vw 0vw 1.1vw 0vw;
+    
+}
+p{
+    font-size: 14px;
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (max-width:768px) {
+
+    article{
+        margin: 5rem 3rem 0rem 3rem;
+        display: block;
+        text-align: center;
+    }
+
+    .myrigth .mydivbar{
+        margin: auto;
+        padding: auto;
+        border: none;
+        width: 65%;
+    }
+
+    article img {
+        width: 35rem;
+        height: 20rem;
+        background:  red;
+    }
+
+
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: unset;
+}
+
+*::selection {
+    background: var(--limon);
+    color: rgb(255, 0, 0);
+}
+
+
+
+body{
+    color: rgb(255, 255, 255);
+    background: url(https://wallpapercave.com/wp/wp9421472.jpg) center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(39, 39, 39, 0.075);
+    box-shadow: 0 .1rem 0.6rem rgba(92, 87, 87, 0.418);
+    padding: 1.2em 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 15px;
+    color: var(--verde);
+    animation: float 4s ease-in-out;
+    transition: 2s;
+}
+header .logo span {
+    color: var(--limon);
+    font-size: 20px;
+}
+header .logo:hover{
+    transform: translateX(200px);
+}
+
+header .navbar a {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    color: rgb(230, 35, 9);
+    
+    
+}
+
+header .navbar a:hover {
+    color: rgb(32, 250, 250);
+    animation: float 2s linear;
+}
+
+@keyframes float {
+    0% {
+        transform: scaleX(0);
+        
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+header input {
+    display:  none;
+}
+header label {
+    font-size: 2rem;
+    color: var(--verde);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 2s;
+}
+
+header label:hover {
+   transform: rotate(720deg);
+}
+
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+    header .navbar a {
+        font-size: 1.9rem;        
+    }
+
+}
+@media (max-width:768px) {
+    header label {
+        visibility: visible;
+        opacity: 1;
+
+    }
+    header .navbar a {
+        font-size: 1.9rem;        
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.698);
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(26, 23, 23, 0.904);
+        box-shadow: 0 .5rem 1rem rgba(56, 51, 51, 0.9);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .5s linear;
+        text-align: center;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked ~ .navbar {
+        transform: scaleY(1);
+        opacity: 1;
+
+    }
+    
+    header input:checked ~ label::before {
+        content: '\f00d';
+    }
+    .inicio{
+        flex-flow: column-reverse;
+    }
+    .inicio .image img {
+        width: 100%;
+    }
+    .inicio .content h3 {
+        font-size: 3.6rem;
+    }
+    .inicio .content p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 49%;
+    }
+
+    
+}
+
+
