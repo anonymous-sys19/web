@@ -9,3 +9,5 @@ window.onscroll = function() {
     } 
     ubicacionPrincipal = desplasamiento; 
 }
+
+
