@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps Temporal</title>
-    <link rel="stylesheet" href="styl.css">
+
     <script src="https://kit.fontawesome.com/df170a256a.js" crossorigin="anonymous"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -21,43 +21,56 @@
     <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Apps</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/anonymous-sys19" target="_blank">Git-Hub</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-
-                </ul>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cyber Security</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Apps mods anonimo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">app</a>
+                            </li>
+                            
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <style>
+        .cont {
+            margin: 3rem;
 
-        .cont  {
-            margin: 3rem ;
-            
 
         }
 
         .cont .rows {
-            width: 400px;
+            max-width: 400px;
             height: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -65,21 +78,28 @@
             grid-column-gap: 10px;
             grid-row-gap: 0px;
         }
+
+        .btnIcon {
+
+            padding: 1rem;
+            font-size: 2rem;
+        }
     </style>
     <div class="card mb-3">
         <div class="cont">
             <div class="rows">
                 <img src="../img/img1.jpg" class="card-img-top" alt="...">
-            <!-- </div>
+                <!-- </div>
             <div class="rows"> -->
                 <img src="../img/img2.jpg" class="card-img-bottom" alt="...">
             </div>
         </div>
         <div class="card-body">
-            <h5 class="card-title">Anonimo Whatsapp  es un mod Modificado por Anonimo-sys-19 </h5>
-            <p class="card-text">Anonimo Whatsapp es un MOD creado por Anonimo-sys-19 con herramientas <br> mejoradas y superiores al del Plus comun</p>
-            <p class="card-text"><small class="text-muted">Last updated 15 day  </small></p>
-            <a type="button" class="btn btn-primary" href="./Anonimo_Whatsapp_2.22.23.77.apk">Download</a>
+            <h5 class="card-title">Anonimo Whatsapp es un mod Modificado por Anonimo-sys-19 </h5>
+            <p class="card-text">Anonimo Whatsapp es un MOD creado por Anonimo-sys-19 con herramientas <br> mejoradas y
+                superiores al del Plus comun</p>
+            <p class="card-text"><small class="text-muted">Last updated 15 day </small></p>
+            <a type="button" class="btn btn-primary btnIcon" href="./anonimoWhasapp.apk">Download</a>
         </div>
     </div>
 
@@ -93,6 +113,11 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>
